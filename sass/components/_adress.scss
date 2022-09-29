@@ -1,0 +1,26 @@
+.adress {
+  font-style: normal;
+
+  &__street {
+    margin-bottom: 9px;
+    color: var(--main-title-color);
+    font-style: normal;
+    line-height: calc(24 / 14);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__contact {
+    color: var(--footer-link);
+    line-height: calc(24 / 14);
+
+    transition: color var(--animation-main-time-cube);
+  }
+
+  &__contact:hover,
+  &__contact:focus {
+    color: var(--accent-color);
+  }
+}

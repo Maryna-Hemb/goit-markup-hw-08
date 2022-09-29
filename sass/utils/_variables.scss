@@ -1,0 +1,32 @@
+:root {
+  /* background-color and elements-color*/
+  --main-background-color: #ffffff;
+  --dark-background-color: #2f303a;
+  --light-background-color: #f5f4fa;
+  --filter-button-background-color: #f5f4fa;
+  --card-border-color: #eeeeee;
+  --header-border-color: #ececec;
+  --icon-color: #afb1b8;
+  /* text-color */
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --active-button-text-color: #ffffff;
+  --main-title-color: #ffffff;
+  --footer-link: rgba(255, 255, 255, 0.6);
+  /* accent-color */
+  --accent-color: #2196f3;
+  --logo-end-dark: #000000;
+  --logo-end-light: #ffffff;
+  /* fonts */
+  --main-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
+  /* other */
+  --btn-radius: 4px;
+  --gap-sectionTitle-content: 50px;
+  --gap-set-cells: 30px;
+  --gap-pageMain-elements-text: 30px;
+  --gap-pageMain-innerTitle-text: 10px;
+  --gap-pagePF-elements-text: 20px;
+  --gap-pagePF-innerTitle-text: 4px;
+  --animation-main-time-cube: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

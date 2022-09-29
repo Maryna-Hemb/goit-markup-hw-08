@@ -1,0 +1,27 @@
+.clients {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap-set-cells);
+
+  &__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    color: var(--icon-color);
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: color var(--animation-main-time-cube), border var(--animation-main-time-cube);
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}

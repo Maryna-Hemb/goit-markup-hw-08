@@ -1,0 +1,20 @@
+.footer {
+  background-color: var(--dark-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &-block__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--active-button-text-color);
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+  }
+}

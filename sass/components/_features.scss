@@ -1,0 +1,31 @@
+.features {
+  display: flex;
+
+  &__item {
+    flex-basis: calc(100% / 4);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: var(--gap-set-cells);
+  }
+
+  &__icon-container {
+    padding: 25px 100px;
+    margin-bottom: var(--gap-pageMain-elements-text);
+    background-color: var(--filter-button-background-color);
+    border-radius: var(--btn-radius);
+  }
+
+  &__title {
+    margin-bottom: var(--gap-pageMain-innerTitle-text);
+    color: var(--title-text-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+  }
+
+  &__text {
+    line-height: calc(24 / 14);
+  }
+}
