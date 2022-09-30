@@ -18,7 +18,11 @@
 .header__logo {
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-right: 93px;
+  margin-right: 90px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0px;
+  }
 }
 
 .footer__logo {

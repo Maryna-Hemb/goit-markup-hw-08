@@ -25,7 +25,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) translateY(0) translateX(0) scale(1);
-  width: 530px;
+  width: 450px;
   min-height: 580px;
   padding: 40px;
   background-color: var(--main-background-color);
@@ -35,6 +35,14 @@
   opacity: 1;
   transition: transform var(--animation-main-time-cube), opacity var(--animation-main-time-cube),
     visibility var(--animation-main-time-cube);
+
+  @media screen and (max-width: 479px) {
+    width: calc(100% - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 530px;
+  }
 
   &-btn {
     position: absolute;

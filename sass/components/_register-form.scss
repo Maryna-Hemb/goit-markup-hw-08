@@ -124,12 +124,23 @@
   }
 
   &__desc {
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(24 / 12);
+    }
   }
 
   &__link {
     color: var(--accent-color);
     text-underline-offset: 2px;
+    font-size: 12px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
   }
 }
 

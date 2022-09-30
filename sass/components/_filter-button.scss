@@ -1,14 +1,13 @@
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: var(--gap-sectionTitle-content);
-
-  .filter__item:not(:last-child) {
-    margin-right: 8px;
-  }
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 15px;
 
   &__button {
-    padding: 6px 22px;
+    padding: 6px 25px;
 
     font-family: inherit;
     color: var(--title-text-color);
@@ -24,15 +23,21 @@
       color var(--animation-main-time-cube), box-shadow var(--animation-main-time-cube);
   }
 
-  &__button--padding-else {
-    padding: 6px 25px;
-  }
-
   &__button:hover,
   &__button:focus {
     color: var(--active-button-text-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: var(--gap-sectionTitle-content);
   }
 }

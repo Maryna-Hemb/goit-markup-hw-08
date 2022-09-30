@@ -1,7 +1,24 @@
 .dispatch {
-  display: flex;
-  position: relative;
-  gap: 12px;
+  &__email {
+    display: block;
+    position: relative;
+  }
+
+  &__type-email {
+    min-height: 50px;
+    padding-left: 75px;
+
+    line-height: calc(16 / 14);
+
+    color: var(--active-button-text-color);
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+
+    transition: border-color var(--animation-main-time-cube);
+  }
 
   &__label-email {
     position: absolute;
@@ -16,21 +33,35 @@
     outline: none;
   }
 
-  &__type-email {
-    min-width: 360px;
-    min-height: 50px;
-    padding-left: 75px;
+  @media screen and (max-width: 1199px) {
+    &__type-email {
+      width: 100%;
+    }
+    &__email-holder {
+      margin-bottom: 20px;
+    }
+  }
 
-    line-height: calc(16 / 14);
+  @media screen and (min-width: 768px) {
+    &__email {
+      width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
-    color: var(--active-button-text-color);
-    background-color: inherit;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    outline: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    position: relative;
+    gap: 12px;
 
-    transition: border-color var(--animation-main-time-cube);
+    &__email {
+      width: 360px;
+    }
+
+    &__type-email {
+      width: 100%;
+    }
   }
 
   &__email:focus > &__type-email,
